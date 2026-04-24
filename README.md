@@ -2,6 +2,10 @@
 
 End-to-end Machine Learning system for predicting heart disease using patient data.
 
+## 🚀 Live API Demo
+Run locally:
+http://127.0.0.1:8000/docs
+
 ## 🚀 Tech Stack
 - Python
 - Scikit-learn
@@ -41,3 +45,18 @@ POST /predict
 {
   "prediction": 1
 }
+
+## 📦 Project Structure
+healthcare-api/
+│
+├── main.py            # FastAPI app
+├── health_model.pkl   # Trained ML model + scaler
+├── Dockerfile         # Container setup
+├── requirements.txt   # Dependencies
+
+## 🧠 How it works
+1. Input patient data via API
+2. Data is scaled using StandardScaler
+3. Model predicts heart disease (0/1)
+4. API returns prediction
+
